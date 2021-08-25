@@ -9,7 +9,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Ore Shop</title>
 </head>
-<body>
+<body class="bg-info">
 
     <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
         <div class="container-fluid">
@@ -32,65 +32,70 @@
     </div>
 
     <div class="container">
+        <h3 class="text-center">Please select the ores you wish to purchase</h3>
         <table class="table table-striped table-hover table-condensed table-responsive">
             <thread>
                 <tr class="success">
                     <th>Ore type: </th>
                     <th>Description </th>
-                    <th>Price: </th>
+                    <th>Price per ore: </th>
                     <th>Buy Amount: </th>
                 </tr>
                 <tr>
                     <td class="d-flex flex-column text-center"><p>Clay</p><img src="assets/clayOre.png" style="width: 15%"></td>
                     <td>1</td>
-                    <td>5</td>
-                    <td>5</td>
+                    <td>$0,50</td>
+                    <td>Select: <input type="number" id="amountOfClay"></td>
                 </tr>
                 <tr>
                     <td class="d-flex flex-column text-center"><p>Copper</p><img src="assets/copperOre.png" style="width: 15%"></td>
                     <td>1</td>
-                    <td>17,5</td>
-                    <td>11</td>
+                    <td>$2,75</td>
+                    <td>Select: <input type="number" id="amountOfCopper"></td>
                 </tr>
                 <tr>
                     <td class="d-flex flex-column text-center"><p>Tin</p><img src="assets/tinOre.png" style="width: 15%"></td>
                     <td>1</td>
-                    <td>17,5</td>
-                    <td>10</td>
+                    <td>$6,50</td>
+                    <td>Select: <input type="number" id="amountOfTin"></td>
                 </tr>
                 <tr>
                     <td class="d-flex flex-column text-center"><p>Iron</p><img src="assets/ironOre.png" style="width: 15%"></td>
                     <td>15</td>
-                    <td>35</td>
-                    <td>9</td>
+                    <td>$5,00</td>
+                    <td>Select: <input type="number" id="amountOfIron"></td>
                 </tr>
                 <tr>
                     <td class="d-flex flex-column text-center"><p>Coal</p><img src="assets/coalOre.png" style="width: 15%"></td>
                     <td>30</td>
-                    <td>50</td>
-                    <td>11</td>
+                    <td>$2,50</td>
+                    <td>Select: <input type="number" id="amountOfCoal"></td>
                 </tr>
                 <tr>
                     <td class="d-flex flex-column text-center"><p>Gold</p><img src="assets/goldOre.png" style="width: 15%"></td>
                     <td>40</td>
-                    <td>65</td>
-                    <td>2</td>
+                    <td>$225,00</td>
+                    <td>Select: <input type="number" id="amountOfGold"></td>
                 </tr>
                 <tr>
                     <td class="d-flex flex-column text-center"><p>Mithril</p><img src="assets/mithrilOre.png" style="width: 15%"></td>
                     <td>55</td>
-                    <td>80</td>
-                    <td>2</td>
+                    <td>$275,50</td>
+                    <td>Select: <input type="number" id="amountOfMithril"></td>
                 </tr>
                 <tr>
                     <td class="d-flex flex-column text-center"><p>Adamantite</p><img src="assets/adamantiteOre.png" style="width: 15%"></td>
                     <td>70</td>
-                    <td>95</td>
-                    <td>3</td>
+                    <td>$945,00</td>
+                    <td>Select: <input type="number" id="amountOfAdamantite"></td>
                 </tr>
             </thread>
             </table>
             </div>
+            
+            <div class="container text-center"><p id="calculatedCost"></p></div>
 
 </body>
+
+<script src="shop.js"></script>
 </html>
