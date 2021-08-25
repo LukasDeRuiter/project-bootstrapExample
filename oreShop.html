@@ -45,56 +45,62 @@
                     <td class="d-flex flex-column text-center"><p>Clay</p><img src="assets/clayOre.png" style="width: 15%"></td>
                     <td>1</td>
                     <td>$0,50</td>
-                    <td>Select: <input type="number" id="amountOfClay"></td>
+                    <td>Select: <input type="number" id="amountOfClay" value="0"></td>
                 </tr>
                 <tr>
                     <td class="d-flex flex-column text-center"><p>Copper</p><img src="assets/copperOre.png" style="width: 15%"></td>
                     <td>1</td>
                     <td>$2,75</td>
-                    <td>Select: <input type="number" id="amountOfCopper"></td>
+                    <td>Select: <input type="number" id="amountOfCopper" value="0"></td>
                 </tr>
                 <tr>
                     <td class="d-flex flex-column text-center"><p>Tin</p><img src="assets/tinOre.png" style="width: 15%"></td>
                     <td>1</td>
                     <td>$6,50</td>
-                    <td>Select: <input type="number" id="amountOfTin"></td>
+                    <td>Select: <input type="number" id="amountOfTin" value="0"></td>
                 </tr>
                 <tr>
                     <td class="d-flex flex-column text-center"><p>Iron</p><img src="assets/ironOre.png" style="width: 15%"></td>
                     <td>15</td>
                     <td>$5,00</td>
-                    <td>Select: <input type="number" id="amountOfIron"></td>
+                    <td>Select: <input type="number" id="amountOfIron" value="0"></td>
                 </tr>
                 <tr>
                     <td class="d-flex flex-column text-center"><p>Coal</p><img src="assets/coalOre.png" style="width: 15%"></td>
                     <td>30</td>
                     <td>$2,50</td>
-                    <td>Select: <input type="number" id="amountOfCoal"></td>
+                    <td>Select: <input type="number" id="amountOfCoal" value="0"></td>
                 </tr>
                 <tr>
                     <td class="d-flex flex-column text-center"><p>Gold</p><img src="assets/goldOre.png" style="width: 15%"></td>
                     <td>40</td>
                     <td>$225,00</td>
-                    <td>Select: <input type="number" id="amountOfGold"></td>
+                    <td>Select: <input type="number" id="amountOfGold" value="0"></td>
                 </tr>
                 <tr>
                     <td class="d-flex flex-column text-center"><p>Mithril</p><img src="assets/mithrilOre.png" style="width: 15%"></td>
                     <td>55</td>
                     <td>$275,50</td>
-                    <td>Select: <input type="number" id="amountOfMithril"></td>
+                    <td>Select: <input type="number" id="amountOfMithril" value="0"></td>
                 </tr>
                 <tr>
                     <td class="d-flex flex-column text-center"><p>Adamantite</p><img src="assets/adamantiteOre.png" style="width: 15%"></td>
                     <td>70</td>
                     <td>$945,00</td>
-                    <td>Select: <input type="number" id="amountOfAdamantite"></td>
+                    <td>Select: <input type="number" id="amountOfAdamantite" value="0"></td>
                 </tr>
             </thread>
             </table>
+            <button class="btn btn-info" id="submitBtn">Submit</button>
             </div>
             
-            <div class="container text-center"><p id="calculatedCost"></p></div>
-
+            <div class="container text-center">
+                <h3 id="calculatedCost"></h3>
+                <button class="btn btn-success"><span class="glyphicon glyphicon-check">Check out</button>
+                </div>
+                
+                
+                <div class="panel panel-default text-center">Created in 2021 by Lukas de Ruiter</div>
 </body>
 
 <script src="shop.js"></script>
